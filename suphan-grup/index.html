@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Süphan Grup Yapı Malzemeleri ve Toptan Satış | Mersin</title>
+<meta name="description" content="Süphan Grup Yapı Malzemeleri ve Toptan Satış - Turkuaz, İdevit ve CeraStyle güvencesiyle banyo dolabı, klozet, lavabo, armatür, boya ve hırdavat ürünleri. Toroslar / Mersin">
+<style>
+:root{
+  --amber:#F59E0B;
+  --amber-dark:#D97706;
+  --amber-soft:#FFF7E8;
+  --brand-red:#E14E28;
+  --turkuaz:#1B9AAA;
+  --dark:#3F3B38;
+  --dark2:#1C1A19;
+  --gray-bg:#F5F5F4;
+  --line:#E7E5E2;
+  --white:#fff;
+  --green:#16A34A;
+  --wa:#25D366;
+  --radius:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;background:var(--gray-bg);color:var(--dark2);-webkit-tap-highlight-color:transparent;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+button{cursor:pointer;border:none;font-family:inherit;}
+
+/* ---------- ÜST ÇUBUK ---------- */
+.topbar{background:var(--dark2);color:#cdc8c4;font-size:12px;padding:7px 14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+.topbar a{display:inline-flex;align-items:center;gap:5px;margin-right:14px;color:#cdc8c4;}
+.topbar a:hover{color:var(--amber);}
+
+/* ---------- HEADER ---------- */
+header.main{background:var(--white);position:sticky;top:0;z-index:60;box-shadow:0 2px 10px rgba(0,0,0,.08);}
+.header-inner{max-width:1340px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:10px 14px;}
+.logo img{height:46px;width:auto;object-fit:contain;}
+.logo{flex-shrink:0;}
+.search-wrap{flex:1;display:none;}
+.search-wrap input{width:100%;padding:11px 14px;border-radius:9px;border:2px solid var(--line);font-size:14px;background:#fafafa;}
+.search-wrap input:focus{outline:none;border-color:var(--amber);background:#fff;}
+.header-actions{display:flex;align-items:center;gap:8px;margin-left:auto;}
+.wa-btn{background:var(--wa);color:#fff;padding:9px 13px;border-radius:9px;font-weight:700;font-size:13px;display:flex;align-items:center;gap:6px;white-space:nowrap;}
+.wa-btn:hover{filter:brightness(.95);}
+.mobile-search{padding:0 12px 10px;display:block;}
+.mobile-search input{width:100%;padding:10px 14px;border-radius:9px;border:2px solid var(--line);font-size:14px;background:#fafafa;}
+.mobile-search input:focus{outline:none;border-color:var(--amber);}
+
+.cat-strip{display:flex;gap:8px;overflow-x:auto;padding:0 12px 10px;background:var(--white);-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.cat-strip::-webkit-scrollbar{display:none;}
+.cat-chip{flex-shrink:0;padding:9px 15px;border-radius:22px;background:var(--gray-bg);font-size:13px;font-weight:700;color:var(--dark);border:2px solid transparent;white-space:nowrap;}
+.cat-chip.active{background:var(--amber);color:#fff;}
+.sub-strip{display:flex;gap:7px;overflow-x:auto;padding:0 12px 10px;background:var(--white);border-top:1px solid #f4f2f0;scrollbar-width:none;}
+.sub-strip::-webkit-scrollbar{display:none;}
+.sub-chip{flex-shrink:0;padding:6px 12px;border-radius:16px;background:#fff;border:1.5px solid var(--line);font-size:12px;font-weight:600;color:var(--dark);white-space:nowrap;}
+.sub-chip.active{background:var(--amber-soft);border-color:var(--amber);color:var(--amber-dark);}
+
+/* ---------- HERO ---------- */
+.hero{max-width:1340px;margin:14px auto 0;padding:0 12px;}
+.hero-banner{background:linear-gradient(115deg,var(--dark2) 0%,var(--dark) 52%,var(--amber-dark) 100%);border-radius:var(--radius);padding:22px 20px;color:#fff;}
+.hero-banner .kicker{font-size:11px;letter-spacing:2px;color:var(--amber);font-weight:800;margin-bottom:8px;}
+.hero-banner h1{font-size:20px;line-height:1.35;margin-bottom:8px;}
+.hero-banner h1 em{font-style:normal;color:var(--amber);}
+.hero-banner p{font-size:13px;color:#e3ded9;}
+.hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
+.hero-tags span{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);padding:5px 11px;border-radius:20px;font-size:11px;font-weight:700;}
+
+/* marka şeridi */
+.brandbar{max-width:1340px;margin:12px auto 0;padding:0 12px;}
+.brandbar-inner{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px;display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;align-items:center;}
+.brandbar-inner::-webkit-scrollbar{display:none;}
+.brandbar-inner b{font-size:11px;color:#8b8580;letter-spacing:.8px;white-space:nowrap;margin-right:4px;}
+.brand-pill{flex-shrink:0;padding:6px 14px;border-radius:20px;background:var(--gray-bg);font-size:12.5px;font-weight:800;color:var(--dark);white-space:nowrap;}
+
+/* ---------- YERLEŞİM ---------- */
+.layout{max-width:1340px;margin:0 auto;padding:0 12px 36px;display:flex;gap:20px;align-items:flex-start;}
+.sidebar{display:none;}
+.content{flex:1;min-width:0;}
+.section-title{display:flex;align-items:flex-end;justify-content:space-between;margin:16px 2px 12px;gap:10px;}
+.section-title h2{font-size:17px;font-weight:800;color:var(--dark2);}
+.breadcrumb{font-size:11px;color:#8b8580;margin-bottom:3px;}
+.result-count{font-size:12px;color:#8b8580;white-space:nowrap;}
+
+/* ---------- ÜRÜN KARTLARI ---------- */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s;}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.11);}
+.card-img{position:relative;aspect-ratio:1/1;overflow:hidden;background:#EFEEEC;cursor:pointer;}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s;}
+.card:hover .card-img img{transform:scale(1.05);}
+.badges{position:absolute;top:7px;left:7px;display:flex;flex-direction:column;gap:4px;}
+.badge{font-size:10px;font-weight:800;padding:3px 8px;border-radius:5px;color:#fff;width:fit-content;}
+.badge.hot{background:var(--brand-red);}
+.badge.wholesale{background:var(--amber);}
+.badge.local{background:var(--green);}
+.badge.new{background:var(--dark);}
+.brand-tag{position:absolute;top:7px;right:7px;background:rgba(28,26,25,.85);color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:5px;letter-spacing:.4px;}
+.card-body{padding:10px;display:flex;flex-direction:column;gap:5px;flex:1;}
+.card-path{font-size:10px;color:#a29c97;font-weight:700;line-height:1.3;}
+.card-path b{color:var(--amber-dark);font-weight:800;}
+.card-title{font-size:13px;font-weight:700;line-height:1.35;cursor:pointer;min-height:36px;}
+.card-feat{font-size:11px;color:#6f6a66;line-height:1.4;}
+.price-note{font-size:11.5px;color:var(--dark);background:var(--amber-soft);border:1px dashed var(--amber);padding:5px 8px;border-radius:6px;font-weight:700;text-align:center;}
+.card-actions{margin-top:auto;display:flex;flex-direction:column;gap:6px;padding-top:7px;}
+.btn-detail{background:var(--dark2);color:#fff;padding:9px;border-radius:8px;font-size:12px;font-weight:700;text-align:center;}
+.btn-detail:hover{background:var(--dark);}
+.btn-wa{background:var(--wa);color:#fff;padding:9px;border-radius:8px;font-size:12px;font-weight:700;text-align:center;display:flex;align-items:center;justify-content:center;gap:5px;line-height:1.2;}
+.btn-wa:hover{filter:brightness(.95);}
+
+/* ---------- MODAL ---------- */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.66);z-index:200;align-items:center;justify-content:center;padding:12px;}
+.modal-overlay.open{display:flex;}
+.modal{background:#fff;border-radius:16px;max-width:920px;width:100%;max-height:92vh;overflow-y:auto;position:relative;}
+.modal-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25);font-size:18px;font-weight:700;z-index:5;color:var(--dark2);display:flex;align-items:center;justify-content:center;}
+.modal-grid{display:grid;grid-template-columns:1fr;}
+.modal-img{aspect-ratio:1/1;overflow:hidden;background:#EFEEEC;}
+.modal-img img{width:100%;height:100%;object-fit:cover;}
+.modal-info{padding:18px;}
+.modal-info h2{font-size:19px;margin:6px 0 10px;line-height:1.3;}
+.modal-badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;}
+.modal-pricebox{background:var(--amber-soft);border:1px dashed var(--amber);border-radius:10px;padding:13px;text-align:center;margin-bottom:14px;}
+.modal-pricebox b{display:block;color:var(--amber-dark);font-size:15px;margin-bottom:3px;}
+.modal-pricebox span{font-size:12px;color:var(--dark);}
+.sec-label{font-size:12px;color:#8b8580;letter-spacing:.6px;font-weight:800;margin:14px 0 4px;}
+.specs{list-style:none;border-top:1px solid var(--line);}
+.specs li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13px;}
+.specs li span:first-child{color:#8b8580;}
+.specs li span:last-child{font-weight:700;text-align:right;}
+.modal-actions{display:flex;flex-direction:column;gap:9px;margin-top:16px;}
+.modal-actions .btn-wa{padding:13px;font-size:14px;border-radius:9px;}
+.modal-actions .btn-detail{padding:13px;font-size:14px;border-radius:9px;background:var(--gray-bg);color:var(--dark2);border:1px solid var(--line);}
+
+/* ---------- AVANTAJ ŞERİDİ ---------- */
+.perks{max-width:1340px;margin:0 auto;padding:0 12px 24px;}
+.perks-inner{background:#fff;border:1px solid var(--line);border-radius:var(--radius);display:grid;grid-template-columns:repeat(2,1fr);gap:1px;overflow:hidden;}
+.perk{padding:16px 12px;text-align:center;}
+.perk .ico{font-size:22px;margin-bottom:6px;}
+.perk b{display:block;font-size:12.5px;margin-bottom:2px;}
+.perk span{font-size:11px;color:#8b8580;}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--dark2);color:#bab5b0;padding:30px 14px 20px;}
+.footer-inner{max-width:1340px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:24px;}
+.footer-logo{background:#fff;border-radius:10px;padding:10px;width:fit-content;margin-bottom:12px;}
+.footer-logo img{height:44px;}
+.footer-col h3{color:#fff;font-size:14px;margin-bottom:12px;letter-spacing:.4px;}
+.footer-col p{font-size:13px;color:#9c9691;margin-bottom:8px;line-height:1.6;}
+.footer-col a{font-size:13px;color:#9c9691;display:block;margin-bottom:9px;}
+.footer-col a:hover{color:var(--amber);}
+.social-row{display:flex;gap:10px;margin-top:10px;}
+.social-icon{width:38px;height:38px;border-radius:50%;background:#37322f;display:flex;align-items:center;justify-content:center;border:1px solid #4a4340;}
+.social-icon:hover{background:var(--amber);border-color:var(--amber);}
+.copyright{text-align:center;font-size:12px;color:#7a7470;margin-top:26px;border-top:1px solid #3f3b38;padding-top:16px;}
+
+.fab{position:fixed;right:14px;bottom:16px;z-index:90;width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.3);font-size:26px;}
+
+/* ---------- MASAÜSTÜ ---------- */
+@media(min-width:900px){
+  .topbar{padding:8px 26px;font-size:13px;}
+  .header-inner{padding:14px 26px;gap:26px;}
+  .logo img{height:58px;}
+  .search-wrap{display:block;}
+  .mobile-search{display:none;}
+  .cat-strip{display:flex;gap:4px;padding:0 26px;border-top:1px solid #f1efed;max-width:1340px;margin:0 auto;}
+  .cat-chip{background:none;border-radius:0;padding:13px 18px;border-bottom:3px solid transparent;font-size:14px;}
+  .cat-chip.active{background:none;color:var(--amber-dark);border-bottom-color:var(--amber);}
+  .sub-strip{display:none;}
+  .sidebar{display:block;width:240px;flex-shrink:0;background:var(--white);border-radius:var(--radius);padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid var(--line);position:sticky;top:132px;}
+  .sidebar h3{font-size:12px;font-weight:800;color:#8b8580;letter-spacing:.7px;margin-bottom:12px;}
+  .side-group{margin-bottom:14px;}
+  .side-main{display:block;width:100%;text-align:left;font-size:13.5px;font-weight:800;color:var(--dark2);padding:8px 10px;border-radius:8px;background:none;}
+  .side-main.active{background:var(--amber-soft);color:var(--amber-dark);}
+  .side-sub{display:block;width:100%;text-align:left;font-size:12.5px;color:#6f6a66;padding:6px 10px 6px 20px;border-radius:7px;background:none;font-weight:600;}
+  .side-sub:hover{color:var(--amber-dark);}
+  .side-sub.active{color:var(--amber-dark);font-weight:800;background:#fbf8f3;}
+  .hero{margin-top:18px;}
+  .hero-banner{padding:42px 46px;}
+  .hero-banner h1{font-size:31px;max-width:780px;}
+  .hero-banner p{font-size:15px;}
+  .grid{grid-template-columns:repeat(4,1fr);gap:18px;}
+  .card-title{font-size:14px;}
+  .card-actions{flex-direction:row;}
+  .card-actions .btn-detail{flex:0 0 36%;}
+  .card-actions .btn-wa{flex:1;}
+  .modal-grid{grid-template-columns:1fr 1fr;}
+  .modal-info{padding:26px;}
+  .perks-inner{grid-template-columns:repeat(4,1fr);background:var(--line);}
+  .perk{background:#fff;padding:22px 16px;}
+  .footer-inner{grid-template-columns:1.4fr 1fr 1fr 1.1fr;}
+  .fab{display:none;}
+}
+@media(min-width:1200px){ .grid{gap:20px;} }
+</style>
+</head>
+<body>
+
+<!-- ÜST BİLGİ ÇUBUĞU -->
+<div class="topbar">
+  <div>
+    <a href="tel:+905370488752">📞 0537 048 87 52</a>
+    <a href="mailto:muhasebe@suphangrupyapi.com">✉️ muhasebe@suphangrupyapi.com</a>
+  </div>
+  <div>
+    <a href="https://maps.app.goo.gl/L5QiDudpHaHHjzvm7" target="_blank" rel="noopener">📍 Turgut Türkalp Mah. Akbelen Bul. No:33A — Toroslar / Mersin</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main">
+  <div class="header-inner">
+    <a class="logo" href="#" onclick="selectCat('Tümü');return false;">
+      <img src="logo.jpg" alt="SÜPHAN GRUP Yapı Malzemeleri ve Toptan Satış">
+    </a>
+    <div class="search-wrap">
+      <input type="text" id="searchInputDesktop" placeholder="Banyo dolabı, klozet, lavabo, batarya, boya, matkap ara...">
+    </div>
+    <div class="header-actions">
+      <a class="wa-btn" href="https://wa.me/905370488752?text=Merhaba%20S%C3%BCphan%20Grup%2C%20%C3%BCr%C3%BCnleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+  <div class="mobile-search">
+    <input type="text" id="searchInputMobile" placeholder="Ürün ara...">
+  </div>
+  <div class="cat-strip" id="catStrip"></div>
+  <div class="sub-strip" id="subStrip"></div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-banner">
+    <div class="kicker">ZARAFET, KALİTE VE FONKSİYON</div>
+    <h1>Banyonuza <em>değer katan</em> ürünler, yapı marketi fiyatlarıyla</h1>
+    <p>Turkuaz banyo mobilyaları, İdevit vitrifiye ve CeraStyle armatür serileri; boya ve hırdavat grubuyla birlikte tek adreste.</p>
+    <div class="hero-tags">
+      <span>✔ Toptan &amp; Perakende</span>
+      <span>✔ Hızlı Teslimat</span>
+      <span>✔ Güvenilir Ürünler</span>
+      <span>✔ Profesyonel Destek</span>
+    </div>
+  </div>
+</div>
+
+<!-- MARKA ŞERİDİ -->
+<div class="brandbar">
+  <div class="brandbar-inner">
+    <b>ÇALIŞTIĞIMIZ MARKALAR</b>
+    <span class="brand-pill">Turkuaz</span>
+    <span class="brand-pill">İdevit</span>
+    <span class="brand-pill">CeraStyle</span>
+    <span class="brand-pill">Frame Serisi</span>
+    <span class="brand-pill">Sharp Serisi</span>
+  </div>
+</div>
+
+<!-- İÇERİK -->
+<div class="layout">
+  <aside class="sidebar">
+    <h3>KATEGORİLER</h3>
+    <div id="sidebarCats"></div>
+  </aside>
+
+  <main class="content">
+    <div class="section-title">
+      <div>
+        <div class="breadcrumb" id="breadcrumb">Ana Sayfa</div>
+        <h2 id="catHeading">Tüm Ürünler</h2>
+      </div>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </main>
+</div>
+
+<!-- AVANTAJLAR -->
+<div class="perks">
+  <div class="perks-inner">
+    <div class="perk"><div class="ico">🚚</div><b>Hızlı Teslimat</b><span>Mersin içi aynı gün</span></div>
+    <div class="perk"><div class="ico">🛡️</div><b>Güvenilir Ürünler</b><span>Garantili markalar</span></div>
+    <div class="perk"><div class="ico">🎧</div><b>Profesyonel Destek</b><span>Ürün seçiminde yardım</span></div>
+    <div class="perk"><div class="ico">🏷️</div><b>Toptan Fiyat</b><span>Usta ve şantiyeye özel</span></div>
+  </div>
+</div>
+
+<!-- ÜRÜN DETAY MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Kapat">✕</button>
+    <div class="modal-grid" id="modalContent"></div>
+  </div>
+</div>
+
+<!-- MOBİL SABİT WHATSAPP -->
+<a class="fab" href="https://wa.me/905370488752?text=Merhaba%20S%C3%BCphan%20Grup%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-logo"><img src="logo.jpg" alt="SÜPHAN GRUP"></div>
+      <p>Seramik &amp; Vitrifiye, Armatür, Boya ve Hırdavat gruplarında toptan ve perakende satış. Şantiye, usta ve bayilere özel fiyatlarımız için bize ulaşın.</p>
+      <div class="social-row">
+        <a class="social-icon" href="https://www.instagram.com/suphangrupyapi/" target="_blank" rel="noopener" title="Instagram">📷</a>
+        <a class="social-icon" href="https://wa.me/905370488752" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+        <a class="social-icon" href="mailto:muhasebe@suphangrupyapi.com" title="E-posta">✉️</a>
+        <a class="social-icon" href="https://maps.app.goo.gl/L5QiDudpHaHHjzvm7" target="_blank" rel="noopener" title="Konum">📍</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>KATEGORİLER</h3>
+      <a href="#" onclick="selectCat('Seramik &amp; Vitrifiye');return false;">Seramik &amp; Vitrifiye</a>
+      <a href="#" onclick="selectCat('Armatür');return false;">Armatür</a>
+      <a href="#" onclick="selectCat('Boya');return false;">Boya</a>
+      <a href="#" onclick="selectCat('Hırdavat');return false;">Hırdavat</a>
+    </div>
+    <div class="footer-col">
+      <h3>İLETİŞİM</h3>
+      <a href="tel:+905370488752">📞 0537 048 87 52</a>
+      <a href="mailto:muhasebe@suphangrupyapi.com">✉️ muhasebe@suphangrupyapi.com</a>
+      <a href="https://wa.me/905370488752" target="_blank" rel="noopener">💬 WhatsApp Sipariş Hattı</a>
+      <a href="https://www.instagram.com/suphangrupyapi/" target="_blank" rel="noopener">📷 Instagram Sayfamız</a>
+    </div>
+    <div class="footer-col">
+      <h3>MAĞAZAMIZ</h3>
+      <p>Turgut Türkalp Mah.<br>Akbelen Bul. No:33A<br>Toroslar / MERSİN</p>
+      <a href="https://maps.app.goo.gl/L5QiDudpHaHHjzvm7" target="_blank" rel="noopener">📍 Google Maps'te Yol Tarifi Al</a>
+      <p>Pazartesi - Cumartesi: 08:00 - 19:00<br>Pazar: Kapalı</p>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Süphan Grup Yapı Malzemeleri ve Toptan Satış — Tüm hakları saklıdır.</div>
+</footer>
+
+<script>
+/* ============ AYARLAR ============ */
+const PHONE = "905370488752";
+
+/* ============ KATEGORİ AĞACI ============ */
+const CATEGORY_TREE = {
+  "Seramik & Vitrifiye": ["Banyo Dolapları","Klozetler","Lavabolar"],
+  "Armatür": ["Bataryalar","Musluklar","Duş Setleri"],
+  "Boya": ["İç/Dış Cephe Boyaları","Silikon & Mastik"],
+  "Hırdavat": ["Şarjlı Matkaplar","El Aletleri","Civata/Kilit"]
+};
+
+/* ============ ÜRÜNLER ============
+   img alanlarındaki dosya adlarını kendi fotoğraflarınızla eşleştirin.
+   Resimleri index.html ile aynı klasöre koymanız yeterlidir.
+================================== */
+const PRODUCTS = [
+  /* --- SERAMİK & VİTRİFİYE / BANYO DOLAPLARI --- */
+  {id:1, img:"urun1.jpg", brand:"Turkuaz", name:"Modern & Şık Banyo Dolabı (Ahşap Desen)",
+   cat:"Seramik & Vitrifiye", sub:"Banyo Dolapları", badges:["hot","wholesale"],
+   feat:"Minimal çizgiler, maksimum şıklık.",
+   specs:{"Marka":"Turkuaz Banyo Mobilya","Gövde":"Suya Dayanıklı MDF Lam","Renk":"Ahşap Desen / Antrasit","İçerik":"Alt Dolap + Lavabo + Ayna Üst Modül","Çekmece":"2 Adet Frenli","Montaj":"Duvara Asmalı"}},
+
+  {id:2, img:"urun2.jpg", brand:"Turkuaz", name:"Fonksiyonel & Pratik Banyo Dolabı (Lacivert)",
+   cat:"Seramik & Vitrifiye", sub:"Banyo Dolapları", badges:["wholesale"],
+   feat:"Akıllı depolama çözümleri, geniş iç hacim.",
+   specs:{"Marka":"Turkuaz Banyo Mobilya","Renk":"Lacivert Mat","İçerik":"Alt Dolap + Lavabo + Ayna + Boy Dolabı","Çekmece":"2 Adet Geniş Çekmece","Özellik":"Geniş Depolama, Kolay Temizlik"}},
+
+  {id:3, img:"urun3.jpg", brand:"Turkuaz", name:"Dayanıklı & Kaliteli Banyo Dolabı (Beyaz + Boy Dolaplı)",
+   cat:"Seramik & Vitrifiye", sub:"Banyo Dolapları", badges:["local"],
+   feat:"Uzun ömürlü, güvenilir kullanım.",
+   specs:{"Marka":"Turkuaz Banyo Mobilya","Renk":"Beyaz","İçerik":"Alt Dolap + Lavabo + Aynalı Üst + Boy Dolabı","Gövde":"Suya Dayanıklı MDF","Kapak":"Çift Kapaklı"}},
+
+  {id:4, img:"urun4.jpg", brand:"Turkuaz", name:"Kompakt & Ferah Banyo Dolabı (Beyaz)",
+   cat:"Seramik & Vitrifiye", sub:"Banyo Dolapları", badges:["new","wholesale"],
+   feat:"Küçük alanlarda büyük konfor.",
+   specs:{"Marka":"Turkuaz Banyo Mobilya","Renk":"Beyaz Parlak","Özellik":"Yer Tasarrufu Sağlar","İçerik":"Alt Dolap + Lavabo + Aynalı Üst Modül","Montaj":"Kolay Montaj"}},
+
+  /* --- KLOZETLER --- */
+  {id:5, img:"urun5.jpg", brand:"İdevit", name:"İdevit Kare Klozet (Alttan Çıkışlı)",
+   cat:"Seramik & Vitrifiye", sub:"Klozetler", badges:["hot","local"],
+   feat:"Kare formlu modern tasarım, hijyenik yüzey.",
+   specs:{"Marka":"İdevit","Model":"Kare","Çıkış Tipi":"Alttan Çıkışlı","Rezervuar":"Çift Basmalı","Su Tüketimi":"3 / 6 Litre","Kapak":"Yavaş Kapanan (Soft Close)"}},
+
+  {id:6, img:"urun6.jpg", brand:"İdevit", name:"İdevit Halley Klozet (Duvara Sıfır)",
+   cat:"Seramik & Vitrifiye", sub:"Klozetler", badges:["hot","local"],
+   feat:"Duvara sıfır montaj, yer kazandıran form.",
+   specs:{"Marka":"İdevit","Model":"Halley","Montaj":"Duvara Sıfır","Rezervuar":"Çift Basmalı","Su Tüketimi":"3 / 6 Litre","Kapak":"Yavaş Kapanan (Soft Close)"}},
+
+  {id:7, img:"urun7.jpg", brand:"Turkuaz", name:"Asma Klozet (Gömme Rezervuar Uyumlu)",
+   cat:"Seramik & Vitrifiye", sub:"Klozetler", badges:["new"],
+   feat:"Şık görünüm, hijyenik ve kolay temizlik.",
+   specs:{"Marka":"Turkuaz","Tip":"Asma (Duvara Monte) Klozet","Rezervuar":"Gömme Rezervuar Uyumlu","Kapak":"Soft Close","Yüzey":"Sırlı Vitrifiye"}},
+
+  {id:8, img:"urun8.jpg", brand:"Turkuaz", name:"Takım Klozet (Standart Rezervuarlı)",
+   cat:"Seramik & Vitrifiye", sub:"Klozetler", badges:["wholesale"],
+   feat:"Dayanıklı yapısı ile uzun ömürlü kullanım.",
+   specs:{"Marka":"Turkuaz","Tip":"Takım Klozet","Rezervuar":"Standart Rezervuar Dahil","Kapak":"Duroplast Kapak","Kullanım":"Konut / İşyeri"}},
+
+  /* --- LAVABOLAR --- */
+  {id:9, img:"urun9.jpg", brand:"Turkuaz", name:"Tezgah Üstü Dikdörtgen Lavabo",
+   cat:"Seramik & Vitrifiye", sub:"Lavabolar", badges:["hot"],
+   feat:"Estetik ve kullanışlı tezgah üstü çözüm.",
+   specs:{"Marka":"Turkuaz","Tip":"Tezgah Üstü (Çanak) Lavabo","Form":"Dikdörtgen","Malzeme":"Sırlı Vitrifiye","Renk":"Beyaz Parlak"}},
+
+  {id:10, img:"urun10.jpg", brand:"Turkuaz", name:"Oval Tezgah Üstü Lavabo",
+   cat:"Seramik & Vitrifiye", sub:"Lavabolar", badges:["new","wholesale"],
+   feat:"Zarif formlar, modern banyolar.",
+   specs:{"Marka":"Turkuaz","Tip":"Tezgah Üstü Lavabo","Form":"Oval","Malzeme":"Sırlı Vitrifiye","Batarya Deliği":"Tek Delikli","Taşma Deliği":"Var"}},
+
+  {id:11, img:"urun11.jpg", brand:"Turkuaz", name:"Etajerli Duvara Asma Lavabo",
+   cat:"Seramik & Vitrifiye", sub:"Lavabolar", badges:["local"],
+   feat:"Dar banyolar için pratik ve ekonomik.",
+   specs:{"Marka":"Turkuaz","Tip":"Etajerli Asma Lavabo","Malzeme":"Vitrifiye Seramik","Genişlik Seçenekleri":"45 / 55 / 65 cm","Batarya Deliği":"Tek Delikli"}},
+
+  /* --- ARMATÜR / BATARYALAR --- */
+  {id:12, img:"urun12.jpg", brand:"CeraStyle", name:"Frame Serisi Lavabo Bataryası",
+   cat:"Armatür", sub:"Bataryalar", badges:["hot","new"],
+   feat:"Şık ve modern tasarım, su tasarrufu sağlayan perlatör.",
+   specs:{"Marka":"CeraStyle","Seri":"Frame Armatür Serisi","Kaplama":"Krom","Gövde":"Pirinç Döküm","Kartuş":"35 mm Seramik Kartuş","Özellik":"Su Tasarruflu Perlatör"}},
+
+  {id:13, img:"urun13.jpg", brand:"CeraStyle", name:"Sharp Serisi Lavabo Bataryası",
+   cat:"Armatür", sub:"Bataryalar", badges:["new"],
+   feat:"Keskin çizgiler, yüksek akış performansı.",
+   specs:{"Marka":"CeraStyle","Seri":"Sharp Armatür Serisi","Kaplama":"Krom","Özellik":"Yüksek Akış Performansı","Yüzey":"Kolay Temizlenen Yüzey","Gövde":"Pirinç"}},
+
+  {id:14, img:"urun14.jpg", brand:"Turkuaz", name:"Turkuaz Serisi Renkli Lavabo Bataryası",
+   cat:"Armatür", sub:"Bataryalar", badges:["wholesale"],
+   feat:"Zengin renk seçenekleri: siyah, gold, bakır, krom.",
+   specs:{"Marka":"Turkuaz","Seri":"Turkuaz Armatür Serisi","Renkler":"Krom / Siyah / Gold / Bakır","Gövde":"Pirinç Gövde","Kaplama":"Krom Kaplama","Kullanım":"Uzun Ömürlü"}},
+
+  {id:15, img:"urun15.jpg", brand:"Turkuaz", name:"Mutfak Eviye Bataryası (Döner Boyun)",
+   cat:"Armatür", sub:"Bataryalar", badges:["hot","wholesale"],
+   feat:"Uzun döner boyun, rahat kullanım.",
+   specs:{"Marka":"Turkuaz","Tip":"Tezgah Üstü Eviye Bataryası","Boyun":"Döner Uzun Boyun","Kaplama":"Krom","Bağlantı":"Flexi Hortum Dahil"}},
+
+  /* --- MUSLUKLAR --- */
+  {id:16, img:"urun16.jpg", brand:"Turkuaz", name:"Krom Lavabo Musluğu (Tek Su)",
+   cat:"Armatür", sub:"Musluklar", badges:["wholesale"],
+   feat:"Lavabo ve çamaşırlık için ekonomik çözüm.",
+   specs:{"Tip":"Tek Su Musluk","Kaplama":"Krom","Gövde":"Pirinç","Kullanım":"Lavabo / Çamaşırlık / Bahçe"}},
+
+  {id:17, img:"urun17.jpg", brand:"Turkuaz", name:"Çamaşır Makinesi Ara Musluğu",
+   cat:"Armatür", sub:"Musluklar", badges:["local"],
+   feat:"Tesisat için standart ölçülerde ara musluk.",
+   specs:{"Tip":"Ara Musluk / Küresel Vana","Ölçü":"1/2\"","Kaplama":"Krom","Kullanım":"Çamaşır - Bulaşık Makinesi Bağlantısı"}},
+
+  /* --- DUŞ SETLERİ --- */
+  {id:18, img:"urun18.jpg", brand:"Turkuaz", name:"Sürgülü Duş Seti (El Duşu + Hortum)",
+   cat:"Armatür", sub:"Duş Setleri", badges:["hot","wholesale"],
+   feat:"3 kademeli başlık, çelik örgülü hortum.",
+   specs:{"Set İçeriği":"El Duşu + Hortum + Sürgü Takımı","Fonksiyon":"3 Kademeli Başlık","Hortum":"150 cm Çelik Örgülü","Kaplama":"Krom"}},
+
+  {id:19, img:"urun19.jpg", brand:"Turkuaz", name:"Banyo Duş Bataryası Takımı",
+   cat:"Armatür", sub:"Duş Setleri", badges:["wholesale"],
+   feat:"Batarya ve duş takımı komple set.",
+   specs:{"Set İçeriği":"Duş Bataryası + El Duşu + Hortum + Askı","Kaplama":"Krom","Kartuş":"Seramik Kartuş","Kullanım":"Banyo / Duş Kabini"}},
+
+  /* --- BOYA --- */
+  {id:20, img:"urun20.jpg", brand:"—", name:"Silikonlu İç Cephe Boyası (15 Lt)",
+   cat:"Boya", sub:"İç/Dış Cephe Boyaları", badges:["hot","local"],
+   feat:"Yüksek kapatıcılık, silinebilir mat yüzey.",
+   specs:{"Ambalaj":"15 Litre","Tür":"Silikonlu Mat İç Cephe","Kapatıcılık":"Yüksek","Kuruma Süresi":"2 - 4 Saat","Renk":"Renk Makinesi ile Tüm Renkler"}},
+
+  {id:21, img:"urun21.jpg", brand:"—", name:"Dış Cephe Silikonlu Boya (15 Lt)",
+   cat:"Boya", sub:"İç/Dış Cephe Boyaları", badges:["wholesale"],
+   feat:"Su itici, UV dayanımlı dış cephe boyası.",
+   specs:{"Ambalaj":"15 Litre","Tür":"Su Bazlı Dış Cephe","Özellik":"Su İtici, UV Dayanımlı","Uygulama":"Fırça / Rulo / Airless"}},
+
+  {id:22, img:"urun22.jpg", brand:"—", name:"Tavan Boyası (Mat Beyaz, 20 Kg)",
+   cat:"Boya", sub:"İç/Dış Cephe Boyaları", badges:["wholesale"],
+   feat:"Damlatmaz yapı, ekonomik sarfiyat.",
+   specs:{"Ambalaj":"20 Kg","Tür":"Plastik Tavan Boyası","Renk":"Mat Beyaz","Özellik":"Damlatmaz, Kolay Uygulama"}},
+
+  {id:23, img:"urun23.jpg", brand:"—", name:"Asetik Silikon (Şeffaf / Beyaz)",
+   cat:"Boya", sub:"Silikon & Mastik", badges:["local"],
+   feat:"Banyo, mutfak ve cam derzleri için.",
+   specs:{"Ambalaj":"280 ml Kartuş","Tür":"Asetik Silikon","Renk":"Şeffaf / Beyaz","Kullanım":"Banyo, Mutfak, Cam, Derz","Satış":"Adet / Koli (25'li)"}},
+
+  {id:24, img:"urun24.jpg", brand:"—", name:"Akrilik Mastik (Boyanabilir)",
+   cat:"Boya", sub:"Silikon & Mastik", badges:["wholesale"],
+   feat:"Üzeri boyanabilen dolgu mastiği.",
+   specs:{"Ambalaj":"280 ml Kartuş","Tür":"Akrilik Dolgu Mastiği","Özellik":"Üzeri Boyanabilir","Kullanım":"Çatlak Dolgu, Kapı - Pencere Kenarı"}},
+
+  /* --- HIRDAVAT --- */
+  {id:25, img:"urun25.jpg", brand:"—", name:"Şarjlı Matkap Vidalama Seti (18V)",
+   cat:"Hırdavat", sub:"Şarjlı Matkaplar", badges:["hot","new"],
+   feat:"Çift bataryalı, çantalı komple set.",
+   specs:{"Voltaj":"18V Li-Ion","Batarya":"2 Adet","Tork Kademesi":"21 + 1","Uç Seti":"Matkap ve Vidalama Uçları Dahil","Çanta":"Taşıma Çantalı"}},
+
+  {id:26, img:"urun26.jpg", brand:"—", name:"Darbeli Matkap (800W)",
+   cat:"Hırdavat", sub:"Şarjlı Matkaplar", badges:["wholesale"],
+   feat:"Beton ve tuğlada güçlü delme performansı.",
+   specs:{"Güç":"800 W","Mandren":"13 mm","Özellik":"Darbeli, Devir Ayarlı, İleri-Geri","Kullanım":"Beton, Tuğla, Ahşap, Metal"}},
+
+  {id:27, img:"urun27.jpg", brand:"—", name:"El Aletleri Takımı (Çantalı Set)",
+   cat:"Hırdavat", sub:"El Aletleri", badges:["new","wholesale"],
+   feat:"Ev ve işyeri için temel alet seti.",
+   specs:{"İçerik":"Pense, Tornavida, Anahtar Takımı, Metre, Çekiç","Malzeme":"Krom Vanadyum","Çanta":"Sert Taşıma Çantası","Kullanım":"Ev / Ofis / Şantiye"}},
+
+  {id:28, img:"urun28.jpg", brand:"—", name:"Merdane, Mala ve İnşaat El Aletleri",
+   cat:"Hırdavat", sub:"El Aletleri", badges:["local"],
+   feat:"Usta ve şantiye kullanımına uygun aletler.",
+   specs:{"Ürünler":"Mala, Mastar, Su Terazisi, Spatula","Malzeme":"Paslanmaz Çelik","Sap":"Ergonomik Kauçuk Sap","Satış":"Adet"}},
+
+  {id:29, img:"urun29.jpg", brand:"—", name:"Çelik Kapı Kilidi ve Barel Grubu",
+   cat:"Hırdavat", sub:"Civata/Kilit", badges:["local"],
+   feat:"Farklı ölçülerde silindir barel seçenekleri.",
+   specs:{"Tür":"Silindir Barel / Kapı Kilidi","Uzunluk":"68 - 90 mm Seçenekli","Anahtar":"5 Adet","Kullanım":"Çelik Kapı / İç Kapı"}},
+
+  {id:30, img:"urun30.jpg", brand:"—", name:"Dübel, Vida ve Civata Grubu",
+   cat:"Hırdavat", sub:"Civata/Kilit", badges:["wholesale"],
+   feat:"Karışık ölçülerde kutulu ve kilo ile satış.",
+   specs:{"İçerik":"Dübel + Vida + Civata + Somun + Pul","Ebat":"Karışık Ölçü","Kaplama":"Galvaniz","Satış":"Kutu / Kilo"}}
+];
+
+const BADGE_META = {
+  hot:{label:"Çok Satan",cls:"hot"},
+  wholesale:{label:"Toptan Fiyat",cls:"wholesale"},
+  local:{label:"Yerli Üretim",cls:"local"},
+  new:{label:"Yeni Ürün",cls:"new"}
+};
+
+/* ============ DURUM ============ */
+let activeCat = "Tümü";
+let activeSub = null;
+let searchTerm = "";
+
+/* ============ GÖRSEL YEDEĞİ ============ */
+const FALLBACK_IMG = "logo.jpg";
+
+
+/* ============ WHATSAPP ============ */
+function waLink(productName){
+  const msg = "Merhaba Süphan Grup, " + productName + " için fiyat bilgisi almak istiyorum.";
+  return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(msg);
+}
+
+/* ============ KATEGORİ ARAYÜZÜ ============ */
+function buildCatStrip(){
+  const strip = document.getElementById('catStrip');
+  strip.innerHTML = "";
+  ["Tümü", ...Object.keys(CATEGORY_TREE)].forEach(c=>{
+    const el = document.createElement('button');
+    el.className = 'cat-chip' + (c===activeCat ? ' active' : '');
+    el.textContent = c;
+    el.onclick = ()=>selectCat(c);
+    strip.appendChild(el);
+  });
+  buildSubStrip();
+}
+
+function buildSubStrip(){
+  const strip = document.getElementById('subStrip');
+  strip.innerHTML = "";
+  if(activeCat === "Tümü"){ strip.style.display = "none"; return; }
+  strip.style.display = "";
+  const all = document.createElement('button');
+  all.className = 'sub-chip' + (activeSub===null ? ' active' : '');
+  all.textContent = "Tümü";
+  all.onclick = ()=>selectSub(null);
+  strip.appendChild(all);
+  CATEGORY_TREE[activeCat].forEach(s=>{
+    const el = document.createElement('button');
+    el.className = 'sub-chip' + (s===activeSub ? ' active' : '');
+    el.textContent = s;
+    el.onclick = ()=>selectSub(s);
+    strip.appendChild(el);
+  });
+}
+
+function buildSidebar(){
+  const box = document.getElementById('sidebarCats');
+  box.innerHTML = "";
+
+  const wrapAll = document.createElement('div');
+  wrapAll.className = 'side-group';
+  const allBtn = document.createElement('button');
+  allBtn.className = 'side-main' + (activeCat==="Tümü" ? ' active' : '');
+  allBtn.textContent = "Tüm Ürünler";
+  allBtn.onclick = ()=>selectCat("Tümü");
+  wrapAll.appendChild(allBtn);
+  box.appendChild(wrapAll);
+
+  Object.keys(CATEGORY_TREE).forEach(cat=>{
+    const g = document.createElement('div');
+    g.className = 'side-group';
+    const main = document.createElement('button');
+    main.className = 'side-main' + (cat===activeCat ? ' active' : '');
+    main.textContent = cat;
+    main.onclick = ()=>selectCat(cat);
+    g.appendChild(main);
+    CATEGORY_TREE[cat].forEach(sub=>{
+      const b = document.createElement('button');
+      b.className = 'side-sub' + (cat===activeCat && sub===activeSub ? ' active' : '');
+      b.textContent = sub;
+      b.onclick = ()=>{ activeCat = cat; selectSub(sub); };
+      g.appendChild(b);
+    });
+    box.appendChild(g);
+  });
+}
+
+function selectCat(c){ activeCat = c; activeSub = null; refresh(true); }
+function selectSub(s){ activeSub = s; refresh(true); }
+
+function refresh(scroll){
+  buildCatStrip();
+  buildSidebar();
+  const bc = document.getElementById('breadcrumb');
+  const head = document.getElementById('catHeading');
+  if(activeCat === "Tümü"){
+    bc.textContent = "Ana Sayfa";
+    head.textContent = "Tüm Ürünler";
+  } else if(!activeSub){
+    bc.textContent = "Ana Sayfa › " + activeCat;
+    head.textContent = activeCat;
+  } else {
+    bc.textContent = "Ana Sayfa › " + activeCat + " › " + activeSub;
+    head.textContent = activeSub;
+  }
+  renderGrid();
+  if(scroll){
+    const target = document.querySelector('.layout');
+    window.scrollTo({ top: target.offsetTop - 95, behavior:'smooth' });
+  }
+}
+
+/* ============ ÜRÜN IZGARASI ============ */
+function renderGrid(){
+  const grid = document.getElementById('productGrid');
+  grid.innerHTML = "";
+  const term = searchTerm.toLocaleLowerCase('tr');
+  const filtered = PRODUCTS.filter(p=>{
+    const okCat = activeCat === "Tümü" || p.cat === activeCat;
+    const okSub = !activeSub || p.sub === activeSub;
+    const hay = (p.name + " " + p.cat + " " + p.sub + " " + p.brand).toLocaleLowerCase('tr');
+    const okSearch = term === "" || hay.includes(term);
+    return okCat && okSub && okSearch;
+  });
+
+  document.getElementById('resultCount').textContent = filtered.length + " ürün";
+
+  if(filtered.length === 0){
+    grid.innerHTML =
+      "<div style='grid-column:1/-1;background:#fff;border:1px solid #E7E5E2;border-radius:12px;padding:40px 20px;text-align:center;color:#8b8580;'>" +
+      "Bu kritere uygun ürün bulunamadı.<br><br>" +
+      "<a class='btn-wa' style='display:inline-flex;padding:12px 18px;' target='_blank' rel='noopener' href='https://wa.me/" + PHONE + "?text=" +
+      encodeURIComponent("Merhaba Süphan Grup, aradığım ürünü sitede bulamadım. Yardımcı olabilir misiniz?") +
+      "'>💬 Aradığınızı bulamadınız mı? Bize sorun</a></div>";
+    return;
+  }
+
+  filtered.forEach(p=>{
+    const card = document.createElement('div');
+    card.className = 'card';
+    const badgesHtml = p.badges.map(b=>`<span class="badge ${BADGE_META[b].cls}">${BADGE_META[b].label}</span>`).join('');
+    const brandHtml = (p.brand && p.brand !== "—") ? `<span class="brand-tag">${p.brand}</span>` : '';
+    card.innerHTML = `
+      <div class="card-img" onclick="openModal(${p.id})">
+        <div class="badges">${badgesHtml}</div>
+        ${brandHtml}
+        <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.onerror=null;this.src=FALLBACK_IMG;this.style.objectFit='contain';this.style.padding='22%';this.style.background='#fff';">
+      </div>
+      <div class="card-body">
+        <div class="card-path"><b>${p.cat}</b> › ${p.sub}</div>
+        <div class="card-title" onclick="openModal(${p.id})">${p.name}</div>
+        <div class="card-feat">${p.feat}</div>
+        <div class="price-note">Fiyat için WhatsApp'tan sorun</div>
+        <div class="card-actions">
+          <button class="btn-detail" onclick="openModal(${p.id})">İncele</button>
+          <a class="btn-wa" href="${waLink(p.name)}" target="_blank" rel="noopener">💬 Fiyat İçin WhatsApp'tan Sorun</a>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+  });
+}
+
+/* ============ MODAL ============ */
+function openModal(id){
+  const p = PRODUCTS.find(x=>x.id === id);
+  if(!p) return;
+  const badgesHtml = p.badges.map(b=>`<span class="badge ${BADGE_META[b].cls}">${BADGE_META[b].label}</span>`).join('');
+  const specsHtml = Object.entries(p.specs).map(([k,v])=>`<li><span>${k}</span><span>${v}</span></li>`).join('');
+  document.getElementById('modalContent').innerHTML = `
+    <div class="modal-img">
+      <img src="${p.img}" alt="${p.name}" onerror="this.onerror=null;this.src=FALLBACK_IMG;this.style.objectFit='contain';this.style.padding='22%';this.style.background='#fff';">
+    </div>
+    <div class="modal-info">
+      <div class="card-path"><b>${p.cat}</b> › ${p.sub}${(p.brand && p.brand !== "—") ? " › " + p.brand : ""}</div>
+      <h2>${p.name}</h2>
+      <div class="modal-badges">${badgesHtml}</div>
+      <p style="font-size:13.5px;color:#6f6a66;line-height:1.6;">${p.feat}</p>
+      <div class="modal-pricebox" style="margin-top:14px;">
+        <b>Fiyat için WhatsApp'tan sorun</b>
+        <span>Toptan, şantiye ve bayi alımlarında özel fiyat uygulanmaktadır.</span>
+      </div>
+      <div class="sec-label">TEKNİK ÖZELLİKLER</div>
+      <ul class="specs">${specsHtml}</ul>
+      <div class="modal-actions">
+        <a class="btn-wa" href="${waLink(p.name)}" target="_blank" rel="noopener">💬 Fiyat İçin WhatsApp'tan Sorun</a>
+        <a class="btn-detail" href="tel:+${PHONE}">📞 Hemen Ara: 0537 048 87 52</a>
+        <a class="btn-detail" href="https://maps.app.goo.gl/L5QiDudpHaHHjzvm7" target="_blank" rel="noopener">📍 Mağazamıza Yol Tarifi Al</a>
+      </div>
+    </div>`;
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(){
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('modalOverlay').addEventListener('click', e=>{
+  if(e.target.id === 'modalOverlay') closeModal();
+});
+document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closeModal(); });
+
+/* ============ ARAMA ============ */
+function bindSearch(id){
+  const el = document.getElementById(id);
+  if(!el) return;
+  el.addEventListener('input', e=>{
+    searchTerm = e.target.value;
+    const otherId = (id === 'searchInputDesktop') ? 'searchInputMobile' : 'searchInputDesktop';
+    const other = document.getElementById(otherId);
+    if(other && other.value !== searchTerm) other.value = searchTerm;
+    renderGrid();
+  });
+}
+bindSearch('searchInputDesktop');
+bindSearch('searchInputMobile');
+
+/* ============ BAŞLAT ============ */
+refresh(false);
+</script>
+</body>
+</html>
